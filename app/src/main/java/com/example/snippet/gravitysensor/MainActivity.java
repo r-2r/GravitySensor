@@ -47,10 +47,8 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         sensor = sensormanager.getDefaultSensor(Sensor.TYPE_GRAVITY);
 
         // check if sensor is available
-         if(sensor != null) {
+         if(sensor == null)
              Toast.makeText(this, "WALANG GRAVITY SENSOR", Toast.LENGTH_SHORT).show();
-             return;
-        }
 
     }
 
